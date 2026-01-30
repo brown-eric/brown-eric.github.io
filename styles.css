@@ -366,4 +366,84 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+ 
+/* Athletics & Honors */
+.athletics-hero {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 0 auto 3.5rem;
+  max-width: 800px;
+  flex-wrap: wrap;
+}
+
+.hero-stat {
+  flex: 1;
+  min-width: 160px;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: rgba(16, 185, 129, 0.15);
+  border-radius: 20px;
+  border: 2px solid rgba(16, 185, 129, 0.4);
+  transition: all 0.3s;
+}
+
+.hero-stat:hover {
+  background: rgba(16, 185, 129, 0.25);
+  transform: translateY(-4px);
+}
+
+.hero-stat .stat-number {
+  color: #10b981;
+  font-size: 1.4rem;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.honors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-auto-rows: 140px;  /* Fixed height - all boxes identical */
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-items: center;  /* Centers the last box */
+}
+
+.honor-item {
+  background: rgba(26, 35, 50, 0.7);
+  padding: 1.25rem 1rem;
+  border-radius: 16px;
+  border-left: 4px solid #10b981;
+  text-align: center;
+  transition: all 0.2s;
+  height: 100%;  /* Fills full grid row height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Vertically centers content */
+  width: 100%;
+}
+
+.honor-item h4 {
+  margin: 0 0 0.25rem;
+  color: #f1f5f9;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+
+.honor-item .small-text {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 0.125rem;
+}
+
+@media (max-width: 768px) {
+  .honors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-auto-rows: 120px;
+    gap: 1rem;
+  }
+}
 
