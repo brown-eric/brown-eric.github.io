@@ -182,14 +182,14 @@ h2 {
 
 #contact a {
   color: #3b82f6;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
 }
 
 #small-contact a {
   text-align: center;
   color: #3b82f6;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -290,18 +290,7 @@ h2 {
   border: 2px solid #334155;
 }
 
-/* Swim team accent color */
-.recruiting-tech .tech-tag {
-  background: linear-gradient(135deg, #10b981, #059669);
-}
-
 /* About Section */
-.about-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
 
 .about-bio p {
   font-size: 1.1rem;
@@ -342,30 +331,6 @@ h2 {
   color: #f1f5f9;
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.skill-category {
-  font-weight: 600;
-  color: #94a3b8;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-}
-
-@media (max-width: 768px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
  
 /* Athletics & Honors */
 .athletics-hero {
@@ -404,11 +369,11 @@ h2 {
 .honors-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  grid-auto-rows: 140px;  /* Fixed height - all boxes identical */
+  grid-auto-rows: 140px;
   gap: 1.25rem;
   max-width: 900px;
   margin: 0 auto;
-  justify-items: center;  /* Centers the last box */
+  justify-items: center;
 }
 
 .honor-item {
@@ -418,11 +383,18 @@ h2 {
   border-left: 4px solid #10b981;
   text-align: center;
   transition: all 0.2s;
-  height: 100%;  /* Fills full grid row height */
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* Vertically centers content */
+  justify-content: center;
   width: 100%;
+}
+
+/* links on honors? */
+.honor-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-color: #10b981;
 }
 
 .honor-item h4 {
@@ -507,3 +479,25 @@ h2 {
     }
   }
 }
+
+/* Minimal Watermark */
+.watermark {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  border-top: 1px solid rgba(51, 65, 85, 0.5);
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+watermark p {
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  watermark {
+    padding: 1.5rem 0.5rem;
+  }
+}
+

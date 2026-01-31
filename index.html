@@ -14,14 +14,15 @@
     <header>
       <img src="pictures/Headshot.jpg" alt="Eric Brown" class="profile-img" />
       <h1>Eric Brown</h1>
-      <p>Computer Science @ University of Florida • National Team Swimmer</p>
+      <p>Computer Science @ University of Florida • National Team Swimmer & Team Captain <br></p>
+      </p>Interested in software development and intelligent automation.</p>
       <section id="small-contact">
         <p><a href="mailto:ericbrownswim@gmail.com">Email</a> | <a href="https://linkedin.com/in/eric-brown16" target="_blank">LinkedIn</a> | <a href="documents/Eric_Brown_Resume.pdf" download>Resume</a></p>
       </section>
       <nav>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#about" class="nav-link">About</a>
-        <a href="#athletics" class="nav-link">Athletics</a>
+        <a href="#athletics" class="nav-link">Honors</a>
       </nav>
     </header>
 
@@ -33,6 +34,7 @@
         <div class="project-card" onclick="toggleDetails(this)">
             <div class="project-header">
                 <h3>Drone-Based 3D Mapping System</h3>
+                <p> Autonomous drone for 3D terrain mapping</p>
                 <span class="arrow">▼</span>
             </div>
             <div class="project-details">
@@ -125,7 +127,7 @@
                 <div class="project-timeline">
                 <div class="timeline-item">
                     <span class="timeline-date">Oct 2025</span>
-                    <span class="timeline-role">Full Implementation</span>
+                    <span class="timeline-role">Implementator</span>
                 </div>
                 </div>
                 
@@ -150,8 +152,9 @@
         <h2>About</h2>
         
         <div class="about-bio">
-          <p>Computer Science BS (3.89 GPA) @ <strong>University of Florida</strong>, May 2026. Building scalable systems and intelligent automation while competing as Canadian National Team swimmer and UF Swim Team Captain.</p>
-          <p>Proven ability to deliver under pressure whilst balancing elite athletics (20+ hrs/week training), academics, and technical projects.</p>
+          <p>Currently seeking new grad or intern roles in software engineering, data/ML engineering, or systems development starting Summer/Fall 2026.</p>
+          <p>Computer Science BS @ <strong>University of Florida</strong>, May 2026. Building scalable systems and intelligent automation while competing as Canadian National Team swimmer and UF Swim Team Captain.
+            Proven ability to deliver under pressure whilst balancing elite athletics (20+ hrs/week training), academics, and technical projects.</p>
         </div>
         
         <div class="about-stats">
@@ -169,22 +172,18 @@
               <span class="small-text"> Budapest 2022 | Japan 2023 | Singapore 2025</span>
           </div>
         </div>
-        
+        <br>
         <div class="about-skills">
           <h3>Skills</h3>
           <div class="skills-list">
-            <div class="skill-pair">
-              <span class="skill-category">Languages:</span>
-              <span>Python, C++, SQL, Java, HTML, CSS, TypeScript, JS</span>
-            </div>
-            <div class="skill-pair">
-              <span class="skill-category">ML/AI:</span>
-              <span>TensorFlow, PyTorch, OpenCV, Scikit-learn, Pandas, NumPy, Matplotlib</span>
-            </div>
-            <div class="skill-pair">
-              <span class="skill-category">Tools:</span>
-              <span>Docker, Git, n8n, Linux, REST APIs</span>
-            </div>
+            <span class="skill-category">Languages:</span>
+            <span>Python, C++, SQL, Java, HTML, CSS, TypeScript, JS</span>
+            <br>
+            <span class="skill-category">ML/AI:</span>
+            <span>TensorFlow, PyTorch, OpenCV, Scikit-learn, Pandas, NumPy, Matplotlib</span>
+            <br>
+            <span class="skill-category">Tools:</span>
+            <span>Docker, Git, n8n, Linux, REST APIs</span>
           </div>
         </div>
       </section>
@@ -193,7 +192,7 @@
       <section id="athletics">
         <h2>Athletics & Honors</h2>
         
-        <!-- Hero Row -->
+        <!-- Hero Row (Athletics) -->
         <div class="athletics-hero">
           <div class="hero-stat">
             <span class="stat-number">Team Captain</span>
@@ -238,8 +237,8 @@
 
       <section id="contact">
         <h2>Contact</h2>
-        <p><a href="mailto:ericbrownswim@gmail.com">ericbrownswim@gmail.com</a></p>
-        <p><a href="https://linkedin.com/in/eric-brown16" target="_blank">LinkedIn</a> | <a href="documents/Eric_Brown_Resume.pdf" download>Resume</a></p>
+        <h3><a href="mailto:ericbrownswim@gmail.com">Email Me</a> | <a href="documents/Eric_Brown_Resume.pdf" download>Download my Resume</a> | <a href="https://linkedin.com/in/eric-brown16" target="_blank">My LinkedIn</a></h3>
+
       </section>
     </main>
   </div>
@@ -252,5 +251,10 @@
       arrow.textContent = details.style.display === 'block' ? '▲' : '▼';
     }
   </script>
+
+  <footer class="watermark">
+    <p>Designed & Built by Eric Brown &bull; 2026</p>
+  </footer>
+
 </body>
 </html>
